@@ -1,0 +1,7 @@
+body { font-family: Arial, sans-serif; display: flex; justify-content: center; padding: 20px; }
+.container { max-width: 600px; width: 100%; padding: 20px; border-radius: 8px; }
+input, button { padding: 10px; margin: 5px 0; width: 100%; }
+.history-list { border-top: 1px solid #ddd; padding-top: 10px; }
+.transaction-item { margin: 10px 0; padding: 10px; border-bottom: 1px solid #eee; }
+.increase { color: green; }
+.decrease { color: red; }

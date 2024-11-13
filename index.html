@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>User Transaction History</title>
+  <style>
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>User Transaction History</h2>
+
+    <div class="login-section">
+      <input type="text" id="loginName" placeholder="Enter your name">
+      <input type="password" id="loginPassword" placeholder="Enter your password">
+      <button onclick="loginUser()">Login</button>
+    </div>
+
+    <div class="user-info">
+      <h3 id="userName">User Name: -</h3>
+      <p id="userTransaction">In-Hand Token: -</p>
+      <p id="userDeposit">Deposit Token: -</p> <!-- New element for deposit amount -->
+    </div>
+
+    <div class="history-section">
+      <h3>Transaction History</h3>
+      <div id="transactionHistory" class="history-list"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
