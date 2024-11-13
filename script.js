@@ -149,3 +149,4 @@ class AmountTracker {
   // December 2024
   increaseAllUsersAmount("2024-Dec-10");
   Mohammad.decreaseAmount(15000, "Sell Token at ₹50", "2024-Dec-15"); // Another custom date for the increase transaction
+  Mohammad.increaseAmount(1000, "Buy Token at ₹50", "2024-Dec-18"); // Another custom date for the increase transaction
