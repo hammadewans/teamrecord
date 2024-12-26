@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+body {
+    max-width: 600px;
+    margin: 0 auto;
+    border: 0.5px solid #bbb;
+    min-height: 100vh;
+}
+.form_element{
+    display: flex;
+    flex-direction: column;
+    padding: 12px 18px;
+    gap: 10px;
+}
+.form_element input {
+    padding-bottom: 5px;
+    border: none;
+    border-bottom: 1px solid #aaa;
+    outline: none;
+}
+.form_element button {
+    background-color: transparent;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #222;
+    color: #fff;
+    border: none;
+}
+.profile {
+    margin: 18px;
+    padding: 18px;
+    text-align: center;
+    border: 0.5px solid #bbb;
+    background-color: #fff;
+    box-shadow: 0 0 15px #ccc;
+
+}
+.profile .name , .profile .stake{
+    color: #333;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+.profile .bld {
+    font-size: 2.25rem;
+    font-weight: 600;
+    }
+.profile .bld::after {
+    position: absolute;
+    content: 'BLD';
+    font-size: 14px;
+    height: fit-content;
+    width: fit-content;
+    color: #888;
+    font-weight: 300;
+}
+.transaction {
+    padding: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+    align-items: stretch;
+}
+.transaction .transaction_heading {
+    margin-bottom: 5px;
+    font-weight: 500;
+    font-size: 16px;
+}
+.transaction section {
+    padding: 12px 24px;
+    border-bottom: 0.5px solid #ccc;
+}
+.transaction section .transaction_date {
+    font-size: 12px;
+    color: #555;
+    float: right;
+}
+.transaction section .transaction_type {
+    font-size: 12px;
+    color: #333;
+}
+.transaction section .transaction_amt {
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: 500;
+    padding: 1.75vh 0;
+}
+.transaction section .transaction_remark {
+    font-size: 13px;
+    text-align: left;
+    color: #888;
+}
+.transaction .not_transaction_available {
+    border: none;
+    text-align: center;
+    color: #999;
+    font-size: 14px;
+    height: 100%;
+    margin-top: 8vh;
+}
+.transaction .deposite .transaction_type, .transaction .deposite .transaction_amt {
+    color: green;
+}
+.transaction .withdrawal .transaction_type, .transaction .withdrawal .transaction_amt {
+    color: red;
+}
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px;
+    background-color: #fff;
+    box-shadow: 0 0 15px #bbb;
+}
+.header .reload_btn {
+    background-color: transparent;
+    border: none;
+}
